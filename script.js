@@ -1,5 +1,3 @@
-//when i put var city into weatherAsk, everything works..
-
 var weather;
 var api = "http://api.openweathermap.org/data/2.5/weather?q=";
 var apiKey = "&appid=001b0f58045147663b1ea518d34d88b4&";
@@ -13,7 +11,7 @@ function setup() {
 }
 
 function weatherAsk() {
-     city = document.getElementById("city").value;
+    city = document.getElementById("city").value;
     var url = api + city + apiKey + units;
     loadJSON(url, gotData);
 }
